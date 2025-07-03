@@ -49,7 +49,7 @@ const NavBar = () => {
           isOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <ul className="flex flex-col gap-4 mt-4">
+        <ul className="flex flex-col gap-2 mt-4">
           {menuList.map((item, index) => (
             <li
               key={index}
