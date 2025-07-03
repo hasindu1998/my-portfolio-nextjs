@@ -24,8 +24,7 @@ const NavBar = () => {
             >
               {item}
             </li>
-          ))}
-          <li><button className="font-semibold bg-gradient-to-r from-purple-500 to-purple-800 text-white pt-2 pb-2 pr-3 pl-3 rounded-lg cursor-pointer hover:opacity-80 transition-transform duration-300">Download CV</button></li>
+          ))}{" "}
         </ul>
 
         {/* Hamburger Button */}
