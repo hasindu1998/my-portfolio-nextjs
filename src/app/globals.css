@@ -1,6 +1,26 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+.LinkedIn:hover{
+  color: #0077B5;
+}
+
+.Instagram:hover{
+  color: #FA7E1E;
+}
+
+.GitHub:hover{
+  color: #4078c0;
+}
+
+.Facebook:hover{
+  color: #1877F2;
+}
+
+.about-text{
+  height: 1900px;
+}
+
 @layer utilities {
   .animate-fade-in-down {
     animation: fadeInDown 1s ease-out forwards;
@@ -33,8 +53,3 @@
   }
 }
 
-
-body{
-    background-color: black;
-    color:gray;
-}
