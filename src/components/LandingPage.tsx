@@ -87,14 +87,18 @@ const LandingPage = () => {
         </div>
         <div className="flex justify-center text-center">
           <div>
-            <div className="z-10 ml-4 flex flex-col items-start space-y-4 text-white animate-fade-in-down">
-              <h4 className="mb-0 lg:text-3xl lg:mt-52 md:text-2xl md:mt-56 mt-32 text-lg text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-purple-500 font-bold uppercase animate-slide-in-left transition duration-700">
+            <div className="z-10 ml-2 flex flex-col items-start space-y-4 text-white animate-fade-in-down">
+              <h4 className="mb-0 lg:text-3xl lg:mt-52 md:text-2xl md:mt-52 mt-32 text-lg text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-purple-500 font-bold uppercase animate-slide-in-left transition duration-700">
                 Hello! I am
               </h4>
-              <h1 className="mt-10 xl:text-9xl lg:text-8xl lg:mt-6 md:text-7xl md:mt-4 text-4xl text-gray-700 font-extrabold animate-slide-in-left transition duration-1000">
+              <h1 className="mt-10 invisible md:visible xl:visible lg:visible xl:text-9xl lg:text-8xl lg:mt-6 md:text-7xl md:mt-4 text-4xl text-gray-700 font-extrabold animate-slide-in-left transition duration-1000">
                 Hasindu &#160; &#160; &#160; Chanuka
               </h1>
-              <h3 className="text-lg lg:text-3xl lg:mt-6 md:text-2xl md:mt-4 font-bold bg-gradient-to-r from-purple-500 to-purple-900 bg-clip-text text-transparent animate-pulse">
+              <h1 className="-mt-24 visible md:invisible xl:invisible lg:invisible xl:text-9xl lg:text-8xl lg:mt-6 md:text-7xl md:mt-4 text-5xl text-gray-700 font-extrabold animate-slide-in-left transition duration-1000">
+                Hasindu Chanuka
+              </h1>
+
+              <h3 className="text-2xl xl:text-4xl xl:-mt-40 lg:text-3xl lg:-mt-32 md:text-2xl md:-mt-24 font-bold bg-gradient-to-r from-purple-500 to-purple-900 bg-clip-text text-transparent animate-pulse">
                 {text}
               </h3>
             </div>
@@ -102,11 +106,11 @@ const LandingPage = () => {
 
           {/* Social Media Icons */}
           <div>
-            <ul className="flex lg:gap-12 absolute xl:bottom-80 xl:right-60 lg:absolute lg:bottom-72 lg:right-22 md:absolute md:bottom-76 md:right-14 md:gap-8 transition-all duration-700 ease-in-out">
+            <ul className="md:flex lg:gap-12 xl:absolute xl:bottom-80 xl:right-60 lg:absolute lg:bottom-68 lg:right-22 md:absolute md:bottom-74 md:right-14 md:gap-8 absolute right-8 bottom-60  transition-all duration-700 ease-in-out">
               {socialMediaIcons.map((social, index) => (
                 <li
                   key={index}
-                  className="text-gray-500 lg:text-3xl md:text-2xl hover:text-purple-500 transition-transform duration-300 hover:scale-125"
+                  className="text-gray-500 lg:text-3xl md:text-2xl text-2xl mb-6 hover:text-purple-500 transition-transform duration-300 hover:scale-125"
                 >
                   <a
                     target="_blank"
