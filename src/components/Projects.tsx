@@ -10,7 +10,7 @@ const Projects = () => {
       image: '/HospitalManagementDashboard.jpeg',
       tags: ["Java", "MySQL", "HTML", "TailwindCSS"],
       github: "https://github.com/hasindu1998/Hospital_Management_System",
-      live: "#"
+      live: "#",
     },
     {
       title: "Movie Finder",
