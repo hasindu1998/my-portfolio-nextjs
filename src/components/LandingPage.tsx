@@ -72,7 +72,7 @@ const LandingPage = () => {
         src={HomeBackground}
         alt="Home Background"
         fill
-        className="lg:object-cover -z-10 lg:h-4/5 md:h-full transition-opacity duration-1000 ease-in"
+        className="lg:object-cover -z-10 lg:h-4/5 md:h-full transition-opacity duration-1000 ease-in blur-sm"
         priority
       />
 

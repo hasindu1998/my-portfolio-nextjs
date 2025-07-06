@@ -17,6 +17,10 @@
   color: #1877F2;
 }
 
+.about-text{
+  height: 1900px;
+}
+
 @layer utilities {
   .animate-fade-in-down {
     animation: fadeInDown 1s ease-out forwards;

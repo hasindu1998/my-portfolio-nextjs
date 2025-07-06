@@ -8,7 +8,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-20 bg-transparent text-gray-600 p-4">
+    <nav className="fixed top-0 left-0 w-full z-20 bg-transparent text-gray-800 p-4 backdrop-blur-sm">
       <div className="flex items-center justify-between px-4 lg:px-10">
         {/* Logo */}
         <h3 className="text-4xl font-bold bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
@@ -16,7 +16,7 @@ const NavBar = () => {
         </h3>
 
         {/* Desktop Menu (Visible on lg and up) */}
-        <ul className="hidden lg:flex gap-10 items-center text-gray-600">
+        <ul className="hidden lg:flex gap-10 items-center text-gray-800">
           {menuList.map((item, index) => (
             <li
               key={index}
@@ -44,7 +44,7 @@ const NavBar = () => {
 
       {/* Animated Mobile Menu (Visible below lg) */}
       <div
-        className={`overflow-hidden transition-all duration-500 ease-in-out lg:hidden ${
+        className={`overflow-hidden transition-all duration-500 ease-in-out lg:hidden backdrop-blur-lg font-semibold ${
           isOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
