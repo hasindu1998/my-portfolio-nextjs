@@ -12,7 +12,7 @@ const NavBar = () => {
       <div className="flex items-center justify-between px-4 lg:px-10">
         {/* Logo */}
         <h3 className="text-4xl font-bold bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
-          Hasi.dev
+          Hasindu
         </h3>
 
         {/* Desktop Menu (Visible on lg and up) */}

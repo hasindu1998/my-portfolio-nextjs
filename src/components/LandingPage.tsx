@@ -9,17 +9,17 @@ const titles = ["Full Stack Developer.", "UI/UX Designer.", "Freelancer."];
 const socialMediaIcons = [
   {
     icon: <FaLinkedin />,
-    url: "https://linkedin.com/in/yourprofile",
+    url: "https://www.linkedin.com/in/hasindu-chanuka-809a6a25b/",
     name: "LinkedIn",
   },
   {
     icon: <FaInstagram />,
-    url: "https://instagram.com/yourprofile",
+    url: "https://www.instagram.com/_.hasindu_98/",
     name: "Instagram",
   },
   {
     icon: <FaGithub />,
-    url: "https://github.com/yourprofile",
+    url: "https://github.com/hasindu1998",
     name: "GitHub",
   },
   {
@@ -72,7 +72,7 @@ const LandingPage = () => {
         src={HomeBackground}
         alt="Home Background"
         fill
-        className="lg:object-cover -z-10 lg:h-4/5 md:h-full transition-opacity duration-1000 ease-in blur-sm"
+        className="lg:object-cover -z-10 lg:h-4/5 md:h-full transition-opacity duration-1000 ease-in"
         priority
       />
 
