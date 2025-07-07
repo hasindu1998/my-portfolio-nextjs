@@ -95,7 +95,7 @@ const LandingPage = () => {
               <h1 className="mt-10 invisible md:visible xl:visible lg:visible xl:text-9xl lg:text-8xl lg:mt-6 md:text-7xl md:mt-4 text-4xl text-gray-700 font-extrabold animate-slide-in-left transition duration-1000">
                 Hasindu &#160; &#160; &#160; Chanuka
               </h1>
-              <h1 className="-mt-24 visible md:invisible xl:invisible lg:invisible xl:text-9xl lg:text-8xl lg:mt-6 md:text-7xl md:mt-4 text-5xl text-gray-700 font-extrabold animate-slide-in-left transition duration-1000">
+              <h1 className="-mt-24 visible md:invisible xl:invisible lg:invisible xl:text-9xl lg:text-8xl lg:mt-6 md:text-7xl md:mt-4 text-4xl text-gray-700 font-extrabold animate-slide-in-left transition duration-1000">
                 Hasindu Chanuka
               </h1>
 
