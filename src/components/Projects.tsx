@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { ExternalLink, Github, MoveRight } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
@@ -76,7 +76,7 @@ const Projects = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-gray-700">
-            A showcase of my recent work and creative solutions I've built.
+            A showcase of my recent work and creative solutions I&apos;ve built.
           </p>
         </div>
 
@@ -94,7 +94,7 @@ const Projects = () => {
               style={{ transitionDelay: `${index * 150}ms` }}
             >
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"

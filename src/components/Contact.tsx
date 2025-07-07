@@ -8,9 +8,7 @@ import {
   Linkedin,
   Facebook,
   Instagram,
-  MoveRight,
 } from "lucide-react";
-import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
 const Contact = () => {
@@ -185,7 +183,7 @@ const Contact = () => {
 
           <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto text-gray-700">
             Ready to bring your ideas to life? Connect with me through any of these platforms{" "}
-            and let's start creating something amazing together.
+            and let&apos;s start creating something amazing together.
           </p>
         </div>
 
@@ -305,7 +303,7 @@ const Contact = () => {
             Ready to Start Your Project?
           </h3>
           <p className="text-muted-foreground mb-6">
-            Choose your preferred way to reach out, and let's discuss how we can bring your vision to
+            Choose your preferred way to reach out, and let&apos;s discuss how we can bring your vision to
             life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

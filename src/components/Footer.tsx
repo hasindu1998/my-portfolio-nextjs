@@ -1,6 +1,6 @@
 
 "use client"
-import { Github, Linkedin, Mail, Heart, ArrowUp, Sparkles } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -50,7 +50,7 @@ const Footer = () => {
                     { icon: Github, href: "#", label: "GitHub" },
                     { icon: Linkedin, href: "#", label: "LinkedIn" },
                     { icon: Mail, href: "mailto:contact@example.com", label: "Email" }
-                  ].map((social, index) => (
+                  ].map((social) => (
                     <a
                       key={social.label}
                       href={social.href}

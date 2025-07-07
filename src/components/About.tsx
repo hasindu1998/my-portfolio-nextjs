@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
-import HomeBackgroundReverse from "../../public/HomeBackgroundReverse.jpg";
 
 const About = () => {
   const myWorks = [
