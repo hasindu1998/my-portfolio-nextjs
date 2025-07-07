@@ -104,6 +104,27 @@ const LandingPage = () => {
               </h3>
             </div>
           </div>
+
+          {/* Social Media Icons */}
+          <div>
+            <ul className="md:flex lg:gap-12 xl:absolute xl:bottom-80 xl:right-60 lg:absolute lg:bottom-68 lg:right-22 md:absolute md:bottom-74 md:right-14 md:gap-8 absolute right-8 bottom-60  transition-all duration-700 ease-in-out">
+              {socialMediaIcons.map((social, index) => (
+                <li
+                  key={index}
+                  className="text-gray-500 lg:text-3xl md:text-2xl text-2xl mb-6 hover:text-purple-500 transition-transform duration-300 hover:scale-125"
+                >
+                  <a
+                    target="_blank"
+                    href={social.url}
+                    rel="noopener noreferrer"
+                    className={social.name}
+                  >
+                    {social.icon}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
