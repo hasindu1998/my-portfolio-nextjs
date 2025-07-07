@@ -1,10 +1,19 @@
 "use client";
+
 import Image from "next/image";
 import React, { useState } from "react";
 import HamburgerMenu from "../../public/HamburgerMenu.png";
+import Link from "next/link";
 
 const NavBar = () => {
-  const menuList = ["Home", "About", "Services", "Projects", "Contact"];
+  const menuList = [
+    { name: "Home", href: "#LandingPage" },
+    { name: "About", href: "#About" },
+    { name: "Services", href: "#Services" },
+    { name: "Projects", href: "#Projects" },
+    { name: "Contact", href: "#Contact" },
+  ];
+
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -15,19 +24,19 @@ const NavBar = () => {
           Hasindu
         </h3>
 
-        {/* Desktop Menu (Visible on lg and up) */}
+        {/* Desktop Menu */}
         <ul className="hidden lg:flex gap-10 items-center text-gray-800">
           {menuList.map((item, index) => (
             <li
               key={index}
               className="cursor-pointer font-semibold transition-transform duration-300 hover:scale-105 hover:text-purple-600"
             >
-              {item}
+              <Link href={item.href}>{item.name}</Link>
             </li>
           ))}
         </ul>
 
-        {/* Hamburger Button (Visible below lg) */}
+        {/* Hamburger Icon for Mobile */}
         <button
           className="lg:hidden transition-transform duration-300 active:scale-90"
           onClick={() => setIsOpen(!isOpen)}
@@ -42,19 +51,19 @@ const NavBar = () => {
         </button>
       </div>
 
-      {/* Animated Mobile Menu (Visible below lg) */}
+      {/* Mobile Dropdown Menu */}
       <div
-        className={`overflow-hidden transition-all duration-500 ease-in-out lg:hidden backdrop-blur-lg font-semibold ${
-          isOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`transition-all duration-500 ease-in-out lg:hidden backdrop-blur-lg font-semibold ${
+          isOpen ? "max-h-60 opacity-100 mt-2" : "max-h-0 opacity-0"
+        } overflow-hidden`}
       >
-        <ul className="flex flex-col gap-2 mt-4 px-4">
+        <ul className="flex flex-col gap-2 px-4 py-2">
           {menuList.map((item, index) => (
             <li
               key={index}
               className="cursor-pointer px-2 py-1 rounded hover:bg-purple-100 transition-all duration-300 hover:scale-105"
             >
-              {item}
+              <Link href={item.href}>{item.name}</Link>
             </li>
           ))}
         </ul>
