@@ -19,7 +19,7 @@ const Projects = () => {
       title: "Movie Finder",
       description:
         "An online pharmacy portal designed to streamline and manage pharmacy operations, including medicine inventory, customer orders, and delivery tracking.",
-      image: "MovieFinder.png",
+      image: "/MovieFinder.png",
       tags: ["ReactJS"],
       github: "https://github.com/hasindu1998/movie_find_react",
       live: "https://hasindu1998.github.io/movie_find_react/",
@@ -85,7 +85,9 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={project.title}
-              ref={(el) => (cardRefs.current[index] = el)}
+              ref={(el) => {
+                cardRefs.current[index] = el;
+              }}
               className={`glass-card rounded-2xl overflow-hidden bg-transparent backdrop-blur-2xl shadow-xl transform transition-all duration-700 ease-in-out ${
                 visible[index]
                   ? "opacity-100 translate-y-0"
@@ -95,6 +97,8 @@ const Projects = () => {
             >
               <div className="relative overflow-hidden">
                 <Image
+                  width={1000}
+                  height={48}
                   src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"

@@ -80,7 +80,9 @@ const About = () => {
           {/* Title */}
           <div
             className={`text-center mb-16 transition-all duration-1000 ease-in-out ${
-              sectionVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              sectionVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
             }`}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -98,7 +100,9 @@ const About = () => {
             {/* My Journey Section */}
             <div
               className={`transition-all duration-1000 ease-in-out ${
-                sectionVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                sectionVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-12"
               }`}
             >
               <div className="glass-card p-8 backdrop-blur-xl bg-transparent rounded-2xl hover-lift shadow-md hover:shadow-md hover:shadow-purple-400 transition duration-500 hover:scale-105">
@@ -129,7 +133,9 @@ const About = () => {
               {myWorks.map((work, index) => (
                 <div
                   key={index}
-                  ref={(el) => (cardRefs.current[index] = el)}
+                  ref={(el) => {
+                    cardRefs.current[index] = el;
+                  }}
                   className={`glass-card p-6 rounded-xl shadow-md transition-all duration-700 ease-in-out cursor-pointer hover:shadow-md hover:shadow-purple-400 ${
                     visibleCards[index]
                       ? "opacity-100 translate-y-0"

@@ -78,7 +78,9 @@ const Skills = () => {
           {images.map((image, index) => (
             <div
               key={image.name}
-              ref={(el) => (iconRefs.current[index] = el)}
+              ref={(el) => {
+                iconRefs.current[index] = el;
+              }}
               className={`transition-all duration-700 ease-in-out transform ${
                 visible[index]
                   ? "opacity-100 translate-y-0"

@@ -81,8 +81,12 @@ const Contact = () => {
   const servicesRef = useRef<HTMLDivElement | null>(null);
   const ctaRef = useRef<HTMLDivElement | null>(null);
 
-  const [visibleContact, setVisibleContact] = useState(contactInfo.map(() => false));
-  const [visibleSocial, setVisibleSocial] = useState(socialMedia.map(() => false));
+  const [visibleContact, setVisibleContact] = useState(
+    contactInfo.map(() => false)
+  );
+  const [visibleSocial, setVisibleSocial] = useState(
+    socialMedia.map(() => false)
+  );
   const [visibleServices, setVisibleServices] = useState(false);
   const [visibleCta, setVisibleCta] = useState(false);
 
@@ -182,8 +186,9 @@ const Contact = () => {
           </h2>
 
           <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto text-gray-700">
-            Ready to bring your ideas to life? Connect with me through any of these platforms{" "}
-            and let&apos;s start creating something amazing together.
+            Ready to bring your ideas to life? Connect with me through any of
+            these platforms and let&apos;s start creating something amazing
+            together.
           </p>
         </div>
 
@@ -195,7 +200,9 @@ const Contact = () => {
               {contactInfo.map((info, idx) => (
                 <div
                   key={info.title}
-                  ref={(el) => (contactRefs.current[idx] = el)}
+                  ref={(el) => {
+                    contactRefs.current[idx] = el;
+                  }}
                   className={`glass-card p-6 rounded-3xl hover-lift hover-glow group relative overflow-hidden shadow-md transition duration-500 hover:scale-105 transform ${
                     visibleContact[idx]
                       ? "opacity-100 translate-y-0"
@@ -206,23 +213,27 @@ const Contact = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-violet-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
 
                   <div className="flex flex-col items-center text-center relative z-10 ">
-                    <div className={`${info.color} p-3 glass-card rounded-2xl mb-4`}>
+                    <div
+                      className={`${info.color} p-3 glass-card rounded-2xl mb-4`}
+                    >
                       {info.icon}
                     </div>
                     <h4 className="font-bold text-primary mb-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-purple-500">
                       {info.title}
                     </h4>
-                    <p className="text-foreground font-medium mb-1 text-gray-700">{info.value}</p>
-                    <p className="text-muted-foreground text-sm text-gray-700">{info.description}</p>
+                    <p className="text-foreground font-medium mb-1 text-gray-700">
+                      {info.value}
+                    </p>
+                    <p className="text-muted-foreground text-sm text-gray-700">
+                      {info.description}
+                    </p>
                   </div>
                 </div>
               ))}
             </div>
 
             {/* Social Media Section */}
-            <div
-              className="glass-card p-8 rounded-3xl hover-glow shadow-lg hover:shadow-xl hover:shadow-purple-200 transition duration-500"
-            >
+            <div className="glass-card p-8 rounded-3xl hover-glow shadow-lg hover:shadow-xl hover:shadow-purple-200 transition duration-500">
               <h3 className="text-2xl font-bold gradient-text mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-purple-500">
                 Connect on Social Media
               </h3>
@@ -234,7 +245,9 @@ const Contact = () => {
                 {socialMedia.map((social, idx) => (
                   <a
                     key={social.name}
-                    ref={(el) => (socialRefs.current[idx] = el)}
+                    ref={(el) => {
+                      socialRefs.current[idx] = el;
+                    }}
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -261,7 +274,9 @@ const Contact = () => {
           <div
             ref={servicesRef}
             className={`glass-card p-8 rounded-3xl hover-glow h-fit shadow-lg hover:shadow-xl hover:shadow-purple-200 transition duration-500 transform ${
-              visibleServices ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+              visibleServices
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-12"
             }`}
             style={{ transitionDelay: "400ms" }}
           >
@@ -295,7 +310,9 @@ const Contact = () => {
         <div
           ref={ctaRef}
           className={`text-center glass-card p-8 rounded-3xl hover-glow max-w-2xl mx-auto shadow-lg hover:shadow-xl hover:shadow-purple-200 transition duration-500 transform ${
-            visibleCta ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+            visibleCta
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-12"
           }`}
           style={{ transitionDelay: "600ms" }}
         >
@@ -303,8 +320,8 @@ const Contact = () => {
             Ready to Start Your Project?
           </h3>
           <p className="text-muted-foreground mb-6">
-            Choose your preferred way to reach out, and let&apos;s discuss how we can bring your vision to
-            life.
+            Choose your preferred way to reach out, and let&apos;s discuss how
+            we can bring your vision to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

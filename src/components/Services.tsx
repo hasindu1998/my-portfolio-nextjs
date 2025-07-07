@@ -108,7 +108,9 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              ref={(el) => (cardRefs.current[index] = el)}
+              ref={(el) => {
+                cardRefs.current[index] = el;
+              }}
               className={`p-8 rounded-3xl group relative overflow-hidden shadow-lg hover:shadow-purple-400 hover:scale-[1.03] transition-all duration-700 ease-in-out transform ${
                 visibleCards[index]
                   ? "opacity-100 translate-y-0"
