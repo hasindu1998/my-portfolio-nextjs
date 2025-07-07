@@ -3,27 +3,27 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import HomeBackground from "../../public/HomeBackground.jpg";
 import me from "../../public/me.png";
-import { FaLinkedin, FaInstagram, FaGithub, FaFacebook } from "react-icons/fa";
+import { Linkedin, Instagram, Github, Facebook } from 'lucide-react';
 
 const titles = ["Full Stack Developer.", "UI/UX Designer.", "Freelancer."];
 const socialMediaIcons = [
   {
-    icon: <FaLinkedin />,
+    icon: <Linkedin />,
     url: "https://www.linkedin.com/in/hasindu-chanuka-809a6a25b/",
     name: "LinkedIn",
   },
   {
-    icon: <FaInstagram />,
+    icon: <Instagram />,
     url: "https://www.instagram.com/_.hasindu_98/",
     name: "Instagram",
   },
   {
-    icon: <FaGithub />,
+    icon: <Github />,
     url: "https://github.com/hasindu1998",
     name: "GitHub",
   },
   {
-    icon: <FaFacebook />,
+    icon: <Facebook />,
     url: "https://facebook.com/yourprofile",
     name: "Facebook",
   },
