@@ -74,7 +74,7 @@ const About = () => {
   }, []);
 
   return (
-    <section id="About" ref={sectionRef}>
+    <section id="About" ref={sectionRef} className="bg-white">
       <div className="py-20 bg-muted/3">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Title */}

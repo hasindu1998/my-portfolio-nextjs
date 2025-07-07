@@ -66,7 +66,7 @@ const LandingPage = () => {
   }, [text, isDeleting, titleIndex]);
 
   return (
-    <section id="Hero">
+    <section id="Hero" className="bg-white">
       <div className="relative h-screen w-screen overflow-hidden">
       {/* Background Image */}
       <Image

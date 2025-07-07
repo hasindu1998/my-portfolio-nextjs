@@ -166,7 +166,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <section id="Contact" className="py-24 relative overflow-hidden">
+    <section id="Contact" className="py-24 relative overflow-hidden bg-white">
       {/* Ambient background */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 right-20 w-72 h-72 bg-gradient-to-br from-purple-500/20 to-violet-600/20 rounded-full blur-3xl float"></div>

@@ -26,7 +26,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative overflow-hidden">
+    <footer className="relative overflow-hidden bg-white">
       {/* Ambient background */}
 
       <div className="relative z-10">

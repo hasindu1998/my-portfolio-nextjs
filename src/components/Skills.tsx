@@ -59,7 +59,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="Skills">
+    <section id="Skills" className="bg-white">
       <div className="pb-20 px-6">
         {/* Title */}
         <div className="text-center mb-16 z-30">
